@@ -1,0 +1,248 @@
+ <!--================= Page Wellcome Area ===================-->
+    <div class="page-heading-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="page-heading">find your room
+            </h2><!--/.page-heading-->
+          </div><!--/.col-md-12-->
+        </div><!--/.row-->
+      </div><!--/.container--> 
+    </div><!--/.page-heading-area-->
+    <div class="page-nav-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="breadcrumb page-nav list-unstyled">
+              <li><a href="<%= root_url %>">Home</a></li>
+              <li>Room Single Page
+              </li>
+            </ul><!--/.page-nav-->
+          </div><!--/.col-md-12-->
+        </div><!--/.row-->
+      </div><!--/.container-->
+    </div><!--/.page-title-area-->
+    <!--================= Content Area ===================-->
+    <div class="room-single-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 room-single-content">
+            <div class="room-single-thumb">
+              <div class="room-thumb-full owl-carousel">
+                <div class="item"><img src="/assets/rooms/room-single.jpg" alt="room-gallery"></div>
+                <div class="item"><img src="/assets/rooms/room-single.jpg" alt="room-gallery"></div>
+                <div class="item"><img src="/assets/rooms/room-single.jpg" alt="room-gallery"></div>
+                <div class="item"><img src="/assets/rooms/room-single.jpg" alt="room-gallery"></div>
+              </div>
+              <div class="room-thumb-list owl-carousel">
+                <div class="item"><img src="/assets/rooms/room-gallery/thumb-1.jpg" alt="room-gallery"></div>
+                <div class="item"><img src="/assets/rooms/room-gallery/thumb-2.jpg" alt="room-gallery"></div>
+                <div class="item"><img src="/assets/rooms/room-gallery/thumb-3.jpg" alt="room-gallery"></div>
+                <div class="item"><img src="/assets/rooms/room-gallery/thumb-4.jpg" alt="room-gallery"></div>
+                <div class="item"><img src="/assets/rooms/room-gallery/thumb-2.jpg" alt="room-gallery"></div>
+              </div>
+            </div><!--/.room-single-thumb-->
+            <div class="single-room list mobile-extend">
+              <div class="room-info">
+                <div class="room-title-area clearfix">
+                  <div class="pull-left">
+                    <h3 class="room-title">Room With ExtraFields</h3>
+                  </div>
+                  <div class="pull-right">
+                    <h5>Starting from $50 / Night</h5>
+                  </div>
+                </div><!--/.room-title-area-->
+                <div class="room-description clearfix">
+                  <h4>Room Description</h4>
+                  <p>Semper ac dolor vitae accumsan. interdum hendrerit lacinia. Etiam eget urna augue. Aen ean posuere pharetra tortor eu sodales. Aenean vitae facilisis ligula.                            </p>
+                  <p>Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et male suada fame ac turpis egestas. Aenean vitae facilisis ligula. Quisque dictum neque in lectus cur sushts congue. Phasellus sodales condimentum rutrum.</p>
+                  <h4>Room Overview</h4>
+                  <p><strong>Semper ac dolor vitae accumsan. interdum hendrerit lacinia. Etiam eget urna augue. Aen ean posuere pharetra tortor eu sodales. Aenean vitae facilisis ligul.</strong></p>
+                </div><!--/.room-description-->
+                <div class="room-service-area clearfix">
+                  <ul class="room-services list-unstyled">
+                    <li><i class="fa fa-home"></i>Room Size 350 FT<sup>2</sup></li>
+                    <li><i class="fa fa-laptop"></i>computer</li>
+                    <li><i class="fa fa-eye"></i>Awesome View</li>
+                    <li><i class="fa fa-wifi"></i>WIFI</li>
+                    <li><i class="fa fa-television"></i>Flat Screen TV</li>
+                    <li><i class="fa fa-microphone-slash"></i>Air Condition</li>
+                    <li><i class="fa fa-eye"></i>Soundproof</li>
+                    <li><i class="fa fa-coffee"></i>Breakfast Included</li>
+                    <li><i class="fa fa-microphone-slash"></i>Room Service</li>
+                    <li><i class="fa fa-plane"></i>Airport Pickup</li>
+                  </ul>
+                </div><!--/.room-service-area-->
+                <div class="room-comments-area">
+                  <div id="respond" class="comment-respond box-radius">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3 class="comment-reply-title">Leave your Reply</h3><!--/.comment-reply-title--> 
+                      </div><!--/.col-md-12-->
+                    </div><!--/.row-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <form action="comments-post.php" method="post" id="comment_form" name="commentForm">
+                          <div class="row">
+                            <div class="col-md-6 col-sm-6 padding-right">
+                              <p>
+                                <input type="text" name="name" id="name" aria-required="true" placeholder="Name*" class="form-controllar">
+                              </p>
+                            </div><!--/.col-md-6-->
+                            <div class="col-md-6 col-sm-6">
+                              <p>
+                                <input type="text" name="email" id="email" aria-required="true" placeholder="Email*" class="form-controllar">
+                              </p>
+                            </div><!--/.col-md-6-->
+                            <div class="col-md-12">
+                              <p>
+                                <input type="text" placeholder="Website*" aria-required="true" id="url" name="url" class="form-controllar">
+                              </p>
+                            </div><!--/.col-md-12-->
+                            <div class="col-md-12">
+                              <p>
+                                <textarea name="message" id="message" aria-required="true" rows="8" cols="45" placeholder="Write a Comment...." class="form-controllar"></textarea>
+                              </p>
+                            </div><!--/.col-md-12-->
+                            <div class="col-md-12">
+                              <p class="form-submit text-center">
+                                <button type="submit" id="submit" class="btn">Post Comment</button>
+                              </p>
+                            </div><!--/.col-md-12-->
+                          </div><!--/.row-->
+                        </form><!--/#comment_form-->
+                      </div><!--/.col-md-12-->
+                    </div><!--/.row-->
+                  </div><!--/.comment-respond--> 
+                </div><!--/.room-comments-area-->
+              </div><!--/.room-info-->
+            </div><!--/.room-single-content-->
+            <div class="hidden-md hidden-lg text-center extend-btn"><span class="extend-icon"><i class="fa fa-angle-down"></i></span></div>
+          </div><!--/.col-md-8-->
+          <div class="col-md-4 room-single-sidebar">                  
+            <form action="#" class="review-comment-form box-radius">
+              <p>Your reservation</p>
+              <div class="single-input">
+                <label class="text-uppercase">Arrival Date</label>
+                <div class="input box-radius"><i class="fa fa-calendar"></i>
+                  <input type="text" id="date-arrival" placeholder="Arrival Date" class="calendar form-controller">
+                </div>
+              </div>
+              <div class="single-input">
+                <label class="text-uppercase">Departure Date</label>
+                <div class="input box-radius"><i class="fa fa-calendar"></i>
+                  <input type="text" id="date-departure" placeholder="Departure Date" class="calendar form-controller">
+                </div>
+              </div>
+              <div class="single-input">
+                <label class="text-uppercase">Nights</label>
+                <div class="input box-radius"><i class="fa fa-caret-down"></i>
+                  <select name="room">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="single-input">
+                <label class="text-uppercase">Room Types</label>
+                <div class="input box-radius"><i class="fa fa-caret-down"></i>
+                  <select name="room">
+                    <option value="1">VIP Room</option>
+                    <option value="2">Exclusive Room</option>
+                    <option value="3">Normal Room</option>
+                  </select>
+                </div>
+              </div>
+              <div class="single-input">
+                <label class="text-uppercase">Rooms</label>
+                <div class="input box-radius"><i class="fa fa-caret-down"></i>
+                  <select name="room">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="single-input">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <label class="text-uppercase">Adult</label>
+                    <div class="input box-radius"><i class="fa fa-caret-down"></i>
+                      <select name="room">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <label class="text-uppercase">Children</label>
+                    <div class="input box-radius"><i class="fa fa-caret-down"></i>
+                      <select name="room">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-submit">Check Availability   </button>
+            </form><!--/.review-comment-form-->  
+          </div><!--/.col-md-4-->
+        </div>
+      </div><!--/.container-->
+    </div><!--/.room-list-area-->
+    <div class="room-related-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title-area text-center">
+              <h2 class="section-title">Related Rooms</h2>
+              <p class="section-title-dec">Find your rooms for your ability</p>
+            </div><!--/.section-title-area-->
+          </div><!--/.col-md-12-->
+        </div><!--/.row-->
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="single-room">
+              <div class="room-thumb box-radius"><a href="room-single-page.html"><img src="/assets/rooms/img-1.jpg" alt="room"></a></div>
+              <div class="room-info box-radius">
+                <h3 class="room-title"><a href="room-single-page.html">Room With ExtraFields</a></h3>
+                <h5>Starting from $50 / Night </h5>
+              </div>
+            </div><!--/.single-room-->
+          </div><!--/.col-md-3-->
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="single-room">
+              <div class="room-thumb box-radius"><a href="room-single-page.html"><img src="/assets/rooms/img-2.jpg" alt="room"></a></div>
+              <div class="room-info box-radius">
+                <h3 class="room-title"><a href="room-single-page.html" class="room-title">Room With ExtraFields</a></h3>
+                <h5>Starting from $50 / Night </h5>
+              </div>
+            </div><!--/.single-room-->
+          </div><!--/.col-md-3-->
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="single-room">
+              <div class="room-thumb box-radius"><a href="room-single-page.html"><img src="/assets/rooms/img-3.jpg" alt="room"></a></div>
+              <div class="room-info box-radius">
+                <h3 class="room-title"><a href="#">Room With ExtraFields</a></h3>
+                <h5>Starting from $50 / Night </h5>
+              </div>
+            </div><!--/.single-room-->
+          </div><!--/.col-md-3-->
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="single-room">
+              <div class="room-thumb box-radius"><a href="room-single-page.html"><img src="/assets/rooms/img-4.jpg" alt="room"></a></div>
+              <div class="room-info box-radius">
+                <h3 class="room-title"><a href="room-single-page.html">Room With ExtraFields</a></h3>
+                <h5>Starting from $50 / Night </h5>
+              </div>
+            </div><!--/.single-room-->
+          </div><!--/.col-md-3-->
+          <div class="clearfix hidden-xs"></div>
+        </div><!--/.row-->   
+      </div><!--/.container-->
+    </div><!--/.room-related-area-->
+    <!--================= Site Footer ===================-->
